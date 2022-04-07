@@ -49,8 +49,8 @@ body {
     font-size: 15px;
 }
 
-/*--------------Button-------------*/
-button{
+/*--------------Button One-------------*/
+.buttonOne {
     border: none;
     text-decoration: none;
     background-color: #0e1e2a;
@@ -58,6 +58,46 @@ button{
     padding: 25px 20px 25px 20px;
 }
 
-button:hover {
+.buttonOne:hover {
     background-color: #519cb7;
 }
+
+/*--------------Button Two-------------*/
+.buttonTwo {
+    color: #00bfff;
+    background-color: rgba(0,0,0,0);
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    border: 2px solid;
+    transition: 0.2s;
+    padding: 25px 20px 25px 20px;
+}
+
+.buttonTwo:hover {
+    background-color: rgb(85, 144, 162);
+}
+
+/*--------------Block One-------------*/
+.blockOne {
+    position: relative;
+
+}
+
+.imgOne {
+    width: 100%;
+    filter: brightness(60%);
+}
+
+.textOne{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 40px ;
+
+}
+

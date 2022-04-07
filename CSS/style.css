@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+.info {
+    background-color: #2f4769;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoLeft {
+    padding-left: 50px;
+}
+
+.infoRight {
+    padding-right: 50px;
+}
+
+.infoBlock {
+    display: inline;
+    padding: 0 10px 0 10px;
+    color: white;
+    font-size: 12px;
+}

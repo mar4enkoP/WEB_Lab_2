@@ -324,7 +324,7 @@ body {
     height: 100%;
 }
 
-.noVisible-2 h2 ,.noVisible-2 p{
+.noVisible-2 h2, .noVisible-2 p {
     padding-top: 5px;
     color: white;
     text-align: left;
@@ -346,9 +346,95 @@ body {
 
 }
 
-.noVisible-2 .buttonOne{
+.noVisible-2 .buttonOne {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
+/*--------------Block six-------------*/
 
+.blockSix {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blockSix img {
+    width: 100%;
+
+}
+
+.structure {
+    width: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+}
+
+.text-6{
+    padding-top: 60px;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+
+}
+
+.text-6 span{
+    color: white;
+    font-size: 30px;
+
+}
+.text-6 h1{
+    margin: 0;
+}
+
+/*--------------Block seven-------------*/
+
+.blockSeven {
+    padding: 50px 15% 60px 15%;
+    height: 700px;
+    background-color: #eaeaea;
+}
+
+.container-7{
+    background-color: white;
+    width: 400px;
+    overflow: hidden;
+}
+.container-7 img {
+    width: 500px;
+    padding: 0;
+}
+
+.container-7 .text-7{
+    padding: 20px;
+}
+
+.text-7 .fa-user{
+    padding-left:25px;
+    border-left: 2px solid black;
+}
+.text-7 span{
+    padding-right: 20px;
+}
+.user{
+    color: #519cb7;
+}
+.text-7 button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*--------------Block Eight-------------*/
+.blockEight{
+    padding: 50px 15% 60px 15%;
+    height: 200px;
+    text-align: center;
+}
+.blockEight .fa-brands{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 100px;
+    color: #c4c4c4;
+}

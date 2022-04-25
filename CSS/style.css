@@ -54,6 +54,7 @@ body {
     border: none;
     text-decoration: none;
     background-color: #0e1e2a;
+    outline: none;
     color: white;
     padding: 25px 20px 25px 20px;
 }
@@ -65,9 +66,8 @@ body {
 /*--------------Button Two-------------*/
 .buttonTwo {
     color: #00bfff;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     text-decoration: none;
-    user-select: none;
     outline: none;
     border: 2px solid;
     transition: 0.2s;
@@ -81,6 +81,8 @@ body {
 /*--------------Block One-------------*/
 .blockOne {
     position: relative;
+    height: 500px;
+    overflow: hidden;
 
 }
 
@@ -89,7 +91,7 @@ body {
     filter: brightness(60%);
 }
 
-.textOne{
+.textOne {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,7 +99,256 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    font-size: 40px ;
+    font-size: 40px;
 
 }
+
+/*--------------Block Two-------------*/
+.blockTwo {
+    padding: 10px 15% 60px 15%;
+    height: 600px;
+
+}
+
+.container {
+    display: inline-block;
+    overflow: hidden;
+    width: 400px;
+    height: 450px;
+    background-color: #558fa1;
+    margin-left: 10px;
+
+}
+
+.container img {
+    height: 250px;
+}
+
+.text {
+    color: white;
+    line-height: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.titleCapsule {
+    width: 100%;
+
+    padding-bottom: 40px;
+}
+
+.title {
+    margin-right: 40%;
+    margin-left: 40%;
+    width: 20%;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+/*--------------Block three-------------*/
+
+.blockThree {
+    background-color: #efefef;
+    padding: 10px 15% 60px 15%;
+
+}
+
+.iconOne {
+    font-size: 60px;
+    color: #558fa1;
+}
+
+.iconTwo {
+    font-size: 60px;
+    color: white;
+    transition: .55s transform;
+    transform: translateY(-100px);
+}
+
+.containerThree {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.visible {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    width: 306px;
+    height: 246px;
+    border: 2px solid;
+    transition: 0.2s;
+    padding-top: 60px;
+    text-align: center;
+
+}
+
+.noVisible {
+    height: 0;
+    transition: .55s height;
+    overflow: hidden;
+    width: 310px;
+    text-align: center;
+    padding-top: 0px;
+    position: absolute;
+    background-color: #558fa1;
+    pointer-events: none;
+}
+
+.noVisible button {
+    pointer-events: visible;
+    visibility: visible;
+}
+
+.activate:hover .noVisible {
+    height: 250px;
+    padding-top: 60px;
+}
+
+.activate:hover .iconTwo {
+    transform: translateY(10px);
+}
+
+.activate:hover .noVisible h2, .noVisible p {
+    transform: translateY(15px);
+}
+
+.activate:hover .noVisible p {
+    transform: translateY(20px);
+}
+
+.activate:hover .noVisible .buttonOne {
+    transform: translateY(25px);
+}
+
+.noVisible .buttonOne {
+    transition: .55s transform;
+    padding: 5px 15px 5px 15px;
+    margin-top: 20px;
+    transform: translateY(-100px);
+}
+
+.noVisible h2, .noVisible p {
+    color: white;
+    margin: 10px;
+    transition: .55s transform;
+    transform: translateY(-100px);
+}
+
+.activate {
+    padding: 0 20px 0 20px;
+    display: inline-block;
+    position: relative;
+    width: 260px;
+    height: 310px;
+}
+
+/*--------------Block four-------------*/
+
+.blockFour {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 10px;
+    background-color: #4e757c;
+    height: 150px;
+    padding: 50px 15% 60px 15%;
+}
+
+.input {
+    height: 50px;
+    width: 400px;
+}
+
+.form_select select {
+    height: 56px;
+    width: 408px;
+
+}
+
+.thirdElement button {
+    height: 56px;
+    width: 300px;
+    padding: 15px 5px 15px 5px;
+}
+
+.firsElement, .secondElement, .thirdElement {
+    display: grid;
+
+    grid-gap: 10px;
+    grid-template-rows: 40% 40% 20%;
+}
+
+.firsElement h1, .firsElement .textBlock-2 {
+    color: white;
+}
+
+.firsElement .line {
+    width: 40px;
+    height: 0;
+    border: 2px solid white;
+}
+
+.firsElement .textBlock-2 {
+    transform: translateY(-40px);
+}
+
+/*--------------Block five-------------*/
+.blockFive {
+    padding: 50px 15% 60px 15%;
+    height: 400px;
+}
+
+.activate-2 {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 240px;
+    padding-bottom: 15px;
+}
+
+.activate-2 .container {
+    margin: 0;
+}
+
+.activate-2 img {
+    height: 100%;
+}
+
+.noVisible-2 h2 ,.noVisible-2 p{
+    padding-top: 5px;
+    color: white;
+    text-align: left;
+}
+
+.activate-2 .noVisible-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    width: 371px;
+    height: 255px;
+    transform: translateY(-254px);
+    background-color: rgba(81, 156, 183, 0.76);
+    transition: .55s transform;
+}
+
+.activate-2:hover .noVisible-2 {
+    transform: translateY(-474px);
+
+}
+
+.noVisible-2 .buttonOne{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 
